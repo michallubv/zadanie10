@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela 3 – inicjały M L (kształt liter)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+    h1 { font-size: 20px; color: #333; }
+    table { border-collapse: collapse; background: #fff; }
+    th, td {
+      border: 1px solid #999;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 16px;
+    }
+    th { background: #cfe8f7; color: #333; }
+    .m { background: #b7d99a; }  /* litera M */
+    .l { background: #f5c37a; }  /* litera L */
+  </style>
+</head>
+<body>
+  <h1>Tabela 3 – inicjały: M L</h1>
+
+  <table>
+    <tr>
+      <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td class="m" rowspan="5">a, f, k, p, u</td>  <!-- M: lewa belka -->
+      <td>b</td>                                    <!-- puste pole -->
+      <td class="m" rowspan="5">c, h, m, r, w</td>  <!-- M: prawa belka -->
+      <td class="l" rowspan="4">d, i, n, s</td>     <!-- L: pionowa belka -->
+      <td>e</td>
+    </tr>
+    <tr>
+      <th>3</th><td class="m">g</td><td>j</td>   <!-- M: środek -->
+    </tr>
+    <tr>
+      <th>4</th><td>l</td><td>o</td>
+    </tr>
+    <tr>
+      <th>5</th><td>q</td><td>t</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>v</td>
+      <td class="l" colspan="2">y, z</td>           <!-- L: pozioma belka -->
+    </tr>
+  </table>
+</body>
+</html>
